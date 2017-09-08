@@ -7,7 +7,7 @@ title: Menu
         <div class="card col">{% assign card = cards[0] %}
             <div class="rotate">
                 <div class="image">
-                    <img src="{{ card.image | prepend: 'img/menu/popular/' | prepend: site.github.url }}" alt="">
+                    <img src="{{ card.image | prepend: '/img/menu/popular/' | prepend: site.github.url }}" alt="">
                 </div>
                 <div class="info">
                     <h2 class="card-title">{{ card.title }}</h2>
@@ -23,7 +23,7 @@ title: Menu
         <div class="card col">
             <div class="rotate">
                 <div class="image">{% assign card = cards[1] %}
-                    <img src="{{ card.image | prepend: 'img/menu/popular/' | prepend: site.github.url }}" alt="">
+                    <img src="{{ card.image | prepend: '/img/menu/popular/' | prepend: site.github.url }}" alt="">
                 </div>
                 <div class="info">
                     <h2 class="card-title">{{ card.title }}</h2>
@@ -39,7 +39,7 @@ title: Menu
         <div class="card col">
             <div class="rotate">
                 <div class="image">{% assign card = cards[2] %}
-                    <img src="{{ card.image | prepend: 'img/menu/popular/' | prepend: site.github.url }}" alt="">
+                    <img src="{{ card.image | prepend: '/img/menu/popular/' | prepend: site.github.url }}" alt="">
                 </div>
                 <div class="info">
                     <h2 class="card-title">{{ card.title }}</h2>
