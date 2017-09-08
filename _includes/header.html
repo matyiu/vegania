@@ -13,7 +13,7 @@
             </a>
             <nav id="main-menu" class="col">{% assign menu = site.data.info.menu %}
                 {% for item in menu %}
-                <a href="{{ item.url }}">{{ item.text }}</a>
+                <a href="{{ item.url | prepend: site.github.url }}">{{ item.text }}</a>
                 {% endfor %}
             </nav>
         </div>

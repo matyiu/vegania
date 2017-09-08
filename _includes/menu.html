@@ -4,7 +4,7 @@
         <div class="row">
             {% for card in site.data.info.menu-section %}
             <div class="card col">
-                <img src="{{ card.image_url | prepend: '/img/menu-section/' }}" alt="{{ card.image_alt }}" class="card-image">
+                <img src="{{ card.image_url | prepend: '/img/menu-section/' | prepend: site.github.url }}" alt="{{ card.image_alt }}" class="card-image">
                 <div class="text">
                     <h2 class="card-title">{{ card.title }}</h2>
                     <p>{{ card.text }}</p>

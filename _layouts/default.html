@@ -7,12 +7,12 @@
     <title>{{ page.title }}</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" data>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="{{ site.github.url }}/css/main.css">
 </head>
 <body>
     {% include header.html %}
     {{ content }}
-    <script src="/js/main.js"></script>
+    <script src="{{ site.github.url }}/js/main.js"></script>
     {% if page.url == "/" %}
     <!-- <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap"></script> -->
     {% endif %}
