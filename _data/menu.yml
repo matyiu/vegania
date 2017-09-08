@@ -1,0 +1,138 @@
+cards:
+    -
+        image: '1.jpg'
+        title: Vegan Niçoise Salad
+        ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+        price: 10.00$
+    -
+        image: '1.jpg'
+        title: Vegan Niçoise Salad
+        ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+        price: 10.00$
+    -
+        image: '1.jpg'
+        title: Vegan Niçoise Salad
+        ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+        price: 10.00$
+
+categories:
+    -
+        title: Appetizer
+        image: '1.jpg'
+        dishes:
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+    -
+        title: Beverage
+        image: '1.jpg'
+        dishes:
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+    -
+        title: Bread
+        image: '1.jpg'
+        dishes:
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+    -
+        title: Dessert
+        image: '1.jpg'
+        dishes:
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+    -
+        title: Entree
+        image: '1.jpg'
+        dishes:
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+    -
+        title: Salad
+        image: '1.jpg'
+        dishes:
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+    -
+        title: Sandwich
+        image: '1.jpg'
+        dishes:
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+    -
+        title: Condiment
+        image: '1.jpg'
+        dishes:
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+    -
+        title: Side Dish
+        image: '1.jpg'
+        dishes:
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+    -
+        title: Soup
+        image: '1.jpg'
+        dishes:
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$
+            -
+                title: Vegan Niçoise Salad
+                ingredients: heads red leaf, sea salt, red potatoes, green beans, Spork Foods’ Niçoise Salad Dressing, tofu, Niçoise olives, Avocado
+                price: 10.00$

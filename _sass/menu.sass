@@ -1,0 +1,194 @@
+#menu-section
+    z-index: 1
+    width: 100%
+    position: relative
+    padding: 50px 0
+    background: $light-color
+
+    .card
+        position: relative
+        color: white
+
+        .card-image
+            width: 200px
+            opacity: 1
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            margin: auto
+            border-radius: 100%
+            transition: all 0.2s ease-in-out
+            @media(max-width: 822px)
+                opacity: 0
+
+        .text
+            width: 100%
+            padding: 15px
+            background: $secondary-color
+            box-shadow: 0 5px 15px 0 rgba($primary-text, 0.6)
+            visibility: hidden
+            transform: scale(0.3)
+            transition: all 0.2s ease-in-out
+            @media(max-width: 822px)
+                visibility: visible
+                transform: none
+
+        @media(min-width: 823px)
+            .card-image:hover
+                opacity: 0
+
+            .card-image:hover + .text, .text:hover
+                visibility: visible
+                transform: scale(1)
+
+        .card-title
+            margin-bottom: 15px
+            text-align: center
+            font-size: 1.625rem
+            font-weight: 400
+
+        p
+            text-align: justify
+            font-size: 1.25rem
+
+#card-section , #menu
+    padding: 50px 0
+
+#card-section .card
+    perspective: 1000px
+    @media(min-width: 823px)
+        &:hover
+            .rotate
+                transform: rotateY(180deg)
+
+    .rotate
+        width: 100%
+        position: relative
+        box-shadow: 0 5px 15px 0 rgba($primary-text, 0.6)
+        transform: rotateY(0deg)
+        transform-style: preserve-3d
+        transition: transform 0.3s ease-in-out
+
+        .info, .image
+            backface-visibility: hidden
+
+        .image
+            display: flex
+            width: 100%
+            img
+                width: 100%
+
+        .info
+            min-width: 100%
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            left: 0
+            padding: 15px
+            background: $secondary-color
+            color: white
+            transform: rotateY(180deg)
+
+            .card-title, .ingredients, .price
+                text-align: center
+
+            .card-title
+                margin-bottom: 15px
+                font-size: 1.5rem
+
+            .ingredients
+                margin-bottom: 30px
+
+            .price
+                font-size: 1.375rem
+                font-weight: 600
+
+#menu
+    #menu-header
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        width: 100%
+
+        .cat-btn
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            flex: 1 auto
+            min-width: 80px
+            padding: 25px 0
+            background: $primary-color
+            color: $primary-text
+            text-align: center
+            text-decoration: none
+            @include fontSize(22px)
+            outline: none
+            transition: color 0.3s ease-in-out
+            @media(min-width: 823px)
+                &:hover
+                    color: $secondary-text
+            &.active
+                color: $secondary-text
+
+    #menu-body
+        width: 100%
+
+        .cat
+            display: none
+            opacity: 0
+            width: 100%
+            transition: opacity 0.1s ease-in-out
+            &.active
+                opacity: 1
+
+            .cat-image, .cat-image img, .dish
+                width: 100%
+
+            .cat-image
+                margin-bottom: 30px
+
+            .dish
+                display: flex
+                margin-bottom: 15px
+                padding-bottom: 15px
+                border-bottom: 5px solid $primary-color
+
+                .info
+                    width: percentage(780px/1140px)
+                    max-width: 780px
+
+                    .dish-title
+                        margin-bottom: 15px
+                        color: $primary-color
+                        @include fontSize(32px)
+                        font-weight: 600
+
+                    .dish-ingredients
+                        color: $secondary-color
+                        @include fontSize(22px)
+
+                .price
+                    display: flex
+                    width: percentage((1140px - 780px) / 1140px)
+                    max-width: ( 1140px - 780px )
+                    color: $primary-color
+                    @include fontSize(24px)
+
+                    p
+                        margin: auto
+
+                @media(max-width: 510px)
+                    flex-direction: column
+                    align-items: center
+                    text-align: center
+
+                    .info
+                        width: 100%
+                        margin-bottom: 15px
+
+                    .price
+                        width: 100%

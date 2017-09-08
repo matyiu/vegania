@@ -1,0 +1,18 @@
+$primary-color: #4cd94c
+$secondary-color: #d9822b
+$light-color: #d99857
+$primary-text: black
+$secondary-text: white
+$col-width: percentage((360 / 1140))
+$col-margin: percentage((15 / 1140))
+
+@function calculateRem($size)
+    $remSize: $size / 16px
+    @return #{$remSize}rem
+
+@mixin fontSize($size)
+    font-size: $size
+    font-size: calculateRem($size)
+
+@mixin width($width)
+    width: percentage($width / 1140px)

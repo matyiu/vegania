@@ -1,0 +1,61 @@
+---
+layout: default
+title: About us
+---
+<section id="body" class="container">{% assign about_page = site.data.info.about_page %}
+    <section id="about" class="row">{% assign about = about_page.about %}
+        <div class="left-title col left">{{ about.left-title }}</div>
+        <div class="col">
+            <div class="about-title">
+                <h2>{{ about.title }}</h2>
+            </div>
+        </div>
+        <div class="progress" style="height: 0;"></div>
+        <div class="right-title col right">{{ about.right-title }}</div>
+    </section>
+    <section id="story" class="row">{% assign story = about_page.story %}
+        <div class="about-title">
+            <h2>{{ story.title }}</h2>
+        </div>
+        <div class="col left">
+            <p>{{ story.first-paragraph }}</p>
+        </div>
+        <div class="col right">
+            <p>{{ story.second-paragraph }}</p>
+        </div>
+        <div class="progress" style="height: 0;">
+            <div class="current-pg"></div>
+        </div>
+    </section>
+    <section id="goals" class="row">{% assign goals = about_page.goals %}
+        <div class="about-title">
+            <h2>{{ goals.title }}</h2>
+        </div>
+        <div class="goal-items">
+            <div class="goals left">
+                <ul class="completed">
+                    {% for goal in goals.completed %}
+                    <li><i class="fa fa-check-square"></i> {{ goal }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="goals right">
+                <ul class="uncompleted">
+                    {% for goal in goals.uncompleted %}
+                    <li><i class="fa fa-square"></i> {{ goal }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="progress" style="height: 0;"></div>
+    </section>
+    <section id="end" class="row">{% assign end = about_page.end %}
+        <div class="about-title">
+            <h2>{{ end.title }}</h2>
+            <div class="paragraph" style="display: none; height: auto;">
+                <p>{{ end.text }}</p>
+            </div>
+        </div>
+    </section>
+</section>
+{% include footer.html %}

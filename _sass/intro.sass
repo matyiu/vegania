@@ -1,0 +1,207 @@
+#intro
+    display: flex
+    align-items: center
+    width: 100%
+    height: 100%
+    background:
+        image: url($intro-bg)
+        size: cover
+        attachment: fixed
+
+    #intro-text
+        z-index: 0
+        width: 40%
+        padding: 40px 20px
+        background: rgba($primary-color, 0.7)
+        text-align: center
+        font-size: 1.75rem
+        // transition: top 0.05s linear
+        @media(max-width: 996px)
+            width: 70%
+        @media(max-width: 480px)
+            width: 95%
+
+#body
+    padding: 50px 0
+
+    .row
+        position: relative
+        padding-bottom: 500px
+        &:last-child
+            padding-bottom: 0 !important
+
+        .col
+            margin-bottom: 0 !important
+
+        .about-title
+            display: flex
+            justify-content: center
+            align-items: center
+            width: 150px
+            min-height: 150px
+            margin: 0 auto
+            border: 5px solid $primary-color
+            border-radius: 50%
+            background: $primary-color
+            transition: all 0.2s ease-in-out
+
+            h2
+                @include fontSize(28px)
+                font-weight: 600
+
+        @media(max-width: 822px)
+            &, &#about
+                padding-bottom: 150px
+
+            .about-title
+                border-color: $secondary-color
+
+        @media(min-width: 823px)
+            .left, .right
+                transition: all 0.5s ease-in-out
+
+            .left
+                left: -50%
+
+            .right
+                right: -50%
+
+        .progress
+            z-index: -1
+            width: 6px
+            height: 0
+            max-height: 500px
+            position: absolute
+            top: 150px
+            right: 0
+            left: 0
+            margin: auto
+            background: $secondary-color
+            transition: height 0.2s linear
+
+    #about
+        flex-wrap: nowrap
+        padding-bottom: 350px
+
+        .col
+            display: flex
+            justify-content: center
+            align-items: center
+            @include fontSize(26px)
+
+        .left-title
+            justify-content: end
+            position: relative
+            font-weight: 600
+
+        .right-title
+            justify-content: start
+            position: relative
+            font-weight: 700
+
+        .about-title
+            border-color: $secondary-color
+
+        @media(max-width: 625px)
+            flex-direction: column
+            align-items: center
+
+            .left-title, .right-title
+                justify-content: inherit
+
+    #story
+        .col
+            position: absolute
+            top: 170px
+            text-align: justify
+            @include fontSize(22px)
+
+        @media(max-width: 822px)
+            flex-direction: column
+
+            .col
+                position: static
+                margin: 30px auto
+
+    #goals
+        .goal-items
+            display: flex
+            @include width(840px)
+            position: absolute
+            top: 170px
+            right: 0
+            left: 0
+            margin: auto
+            @include fontSize(22px)
+
+            .goals
+                display: flex
+                width: 50%
+                &.left
+                    justify-content: flex-end
+                    opacity: 0
+                    position: relative
+                    bottom: 170px
+                    left: 0
+                    padding-right: 30px
+
+                &.right
+                    justify-content: flex-start
+                    opacity: 0
+                    position: relative
+                    top: 170px
+                    right: 0
+                    margin-top: 110px
+                    padding-left: 30px
+
+                ul
+                    list-style: none
+            @media(max-width: 625px)
+                flex-wrap: wrap
+                .goals
+                    width: 100%
+                    justify-content: inherit !important
+                    padding: 0 0 0 30px
+                    &.right
+                        margin-top: 30px
+            @media(max-width: 400px)
+                width: 100%
+        @media(max-width: 822px)
+            flex-direction: column
+
+            .goal-items
+                position: static
+                margin-top: 30px
+
+                .goals
+                    &.left, &.right
+                        opacity: 1
+                        position: static
+
+
+    #end
+        .about-title
+            flex-direction: column
+            min-height: 150px
+            padding: 15px
+            transition: width 0.5s ease-in-out
+
+            .paragraph
+                opacity: 0
+                @include fontSize(22px)
+                text-align: justify
+
+            @media(max-width: 822px)
+                width: 50%
+                border-radius: 0
+
+                .paragraph
+                    display: block !important
+                    opacity: 1
+
+                h2
+                    margin-bottom: 15px
+            @media(max-width: 625px)
+                width: 70%
+            @media(max-width: 400px)
+                width: 100%

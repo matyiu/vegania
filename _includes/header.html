@@ -1,0 +1,21 @@
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div id="logo" class="col">
+                {% if site.logo.url.size > 1 %}
+                <img src="{{ site.logo.url }}" alt="{{ site.logo.text }}">
+                {% else %}
+                <h1>{{ site.logo.text }}</h1>
+                {% endif %}
+            </div>
+            <a href="#" id="open-menu">
+                <i class="fa fa-navicon"></i>
+            </a>
+            <nav id="main-menu" class="col">{% assign menu = site.data.info.menu %}
+                {% for item in menu %}
+                <a href="{{ item.url }}">{{ item.text }}</a>
+                {% endfor %}
+            </nav>
+        </div>
+    </div>
+</header>

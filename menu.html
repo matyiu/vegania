@@ -1,0 +1,85 @@
+---
+layout: default
+title: Menu
+---
+<div class="container">{% assign menu = site.data.menu %}
+    <section id="card-section" class="row">{% assign cards = menu.cards %}
+        <div class="card col">{% assign card = cards[0] %}
+            <div class="rotate">
+                <div class="image">
+                    <img src="{{ card.image | prepend: 'img/menu/popular/' | relative_url }}" alt="">
+                </div>
+                <div class="info">
+                    <h2 class="card-title">{{ card.title }}</h2>
+                    <p class="ingredients">
+                        {{ card.ingredients }}
+                    </p>
+                    <p class="price">
+                        {{ card.price }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card col">
+            <div class="rotate">
+                <div class="image">{% assign card = cards[1] %}
+                    <img src="{{ card.image | prepend: 'img/menu/popular/' | relative_url }}" alt="">
+                </div>
+                <div class="info">
+                    <h2 class="card-title">{{ card.title }}</h2>
+                    <p class="ingredients">
+                        {{ card.ingredients }}
+                    </p>
+                    <p class="price">
+                        {{ card.price }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card col">
+            <div class="rotate">
+                <div class="image">{% assign card = cards[2] %}
+                    <img src="{{ card.image | prepend: 'img/menu/popular/' | relative_url }}" alt="">
+                </div>
+                <div class="info">
+                    <h2 class="card-title">{{ card.title }}</h2>
+                    <p class="ingredients">
+                        {{ card.ingredients }}
+                    </p>
+                    <p class="price">
+                        {{ card.price }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="menu" class="row">{% assign categories = menu.categories %}
+        <header id="menu-header">
+            {% for cat in categories %}
+            <a href="#" class="cat-btn {% if forloop.first == true %}active{% endif %}" data-section="{{ cat.title | downcase | slugify }}">{{ cat.title }}</a>
+            {% endfor %}
+        </header>
+        <div id="menu-body">
+            {% for cat in categories %}
+            <section id="{{ cat.title | downcase | slugify }}" class="cat {% if forloop.first == true %}active{% endif %}"
+            {% if forloop.first == true %}style="display: block;"{% endif %}>
+                <div class="cat-image">
+                    <img src="{{ cat.image | prepend: 'img/menu/' | relative_url }}" alt="">
+                </div>
+                {% for dish in cat.dishes %}
+                <div class="dish">
+                    <div class="info">
+                        <h2 class="dish-title">{{ dish.title }}</h2>
+                        <p class="dish-ingredients">{{ dish.ingredients }}</p>
+                    </div>
+                    <div class="price">
+                        <p>{{ dish.price }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </section>
+            {% endfor %}
+        </div>
+    </section>
+</div>
+{% include footer.html %}

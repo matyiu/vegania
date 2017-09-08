@@ -1,0 +1,21 @@
+<footer id="footer">{% assign footer = site.data.info.footer %}
+    <div class="container">
+        <div class="row flex--between">
+            <div class="col footer-info">
+                <h3>{{ footer.timetable.title }}</h3>
+                <p>{{ footer.timetable.text }}</p>
+            </div>
+            <div class="col footer-info">
+                <h3>{{ footer.direction.title }}</h3>
+                <p>{{ footer.direction.text }}</p>
+            </div>
+            <div class="col footer-info">
+                <h3>{{ footer.contact.title }}</h3>
+                {% for phone in footer.contact.phones %}
+                <p>{{ phone }}</p>
+                {% endfor %}
+            </div>
+        </div>
+        <p id="copy">&copy; theme made by Jefferson Valle</p>
+    </div>
+</footer>

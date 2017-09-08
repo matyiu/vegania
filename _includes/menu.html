@@ -1,0 +1,16 @@
+<section id="menu-section">
+    <h1 class="title">Menu</h1>
+    <div class="container">
+        <div class="row">
+            {% for card in site.data.info.menu-section %}
+            <div class="card col">
+                <img src="{{ card.image_url | prepend: '/img/menu-section/' }}" alt="{{ card.image_alt }}" class="card-image">
+                <div class="text">
+                    <h2 class="card-title">{{ card.title }}</h2>
+                    <p>{{ card.text }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

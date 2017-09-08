@@ -1,0 +1,74 @@
+menu:
+    -
+        text: 'Home'
+        url: '/'
+    -
+        text: 'About us'
+        url: '/about/'
+    -
+        text: 'Menu'
+        url: '/menu/'
+    -
+        text: 'Contact'
+        url: '#footer'
+
+intro-section:
+    background: 'hero-section.jpg'
+    box-align: left
+    text: 'Nulla tempus magna id risus condimentum, ut scelerisque odio aliquet. Sed nec rhoncus turpis, eu imperdiet mauris. Aenean dictum non tortor in elementum. Mauris ligula odio, ultricies non eros et, pharetra auctor diam. Suspendisse eu urna posuere, ultricies odio quis, hendrerit metus.'
+
+menu-section:
+    -
+        title: Gluten Free
+        image_url: 'gluten.jpg'
+        image_alt:
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed purus nec nibh consectetur rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum bibendum porta. Donec urna lorem, porta sed suscipit et, imperdiet vitae dui. Donec lobortis ornare arcu varius congue. Nullam consectetur rutrum mi, nec tristique nisi ultrices ut. Maecenas auctor laoreet ligula.'
+    -
+        title: 100% Natural
+        image_url: 'natural.jpg'
+        image_alt:
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed purus nec nibh consectetur rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum bibendum porta. Donec urna lorem, porta sed suscipit et, imperdiet vitae dui. Donec lobortis ornare arcu varius congue. Nullam consectetur rutrum mi, nec tristique nisi ultrices ut. Maecenas auctor laoreet ligula.'
+    -
+        title: 100% Vegan
+        image_url: 'vegan.jpg'
+        image_alt:
+        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed purus nec nibh consectetur rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dictum bibendum porta. Donec urna lorem, porta sed suscipit et, imperdiet vitae dui. Donec lobortis ornare arcu varius congue. Nullam consectetur rutrum mi, nec tristique nisi ultrices ut. Maecenas auctor laoreet ligula.'
+
+footer:
+    timetable:
+        title: Timetable
+        text: '<strong>Monday to Wednesday:</strong><br />Lunch: 1pm to 16pm<br />Dinner: 8pm to 12am<br /><strong>Thursday to Sunday:</strong><br />Lunch: 1pm to 17pm<br />Dinner: 8pm to 1am'
+    direction:
+        title: Direction
+        text: '519 Whitemarsh Ave.<br />Piscataway, NJ 08854'
+    contact:
+        title: Contact
+        phones:
+            - +1 786 123 4567
+            - +1 786 123 4567
+
+about_page:
+    about:
+        left-title: A brief story
+        title: About
+        right-title: VEGAN RESTAURANT
+    story:
+        title: Story
+        first-paragraph: Integer in vehicula nisi, a suscipit eros. Nunc sagittis fermentum dictum. Donec consectetur laoreet magna, nec suscipit nunc interdum sit amet. Proin varius velit ac tincidunt scelerisque. Sed ut pulvinar magna, at malesuada ipsum. Donec vitae lacus mattis leo condimentum condimentum eu et nibh. Aenean commodo eros vitae arcu tempus porta.
+        second-paragraph: Aliquam erat volutpat. Duis pellentesque facilisis condimentum. Morbi dignissim non nisl sit amet pharetra. Maecenas ullamcorper nunc et elit porttitor porta. Nullam metus sapien, ullamcorper eu scelerisque in, scelerisque at massa. Praesent gravida convallis diam ut dapibus. Fusce commodo elit in sollicitudin dapibus.
+    goals:
+        title: Goals
+        completed:
+            - Integer in vehicula nisi, a suscipit eros.
+            - Donec consectetur laoreet magna.
+            - Suscipit nunc interdum sit amet.
+            - Proin varius velit ac tincidunt.
+            - scelerisque.  Donec vitae lacus mattis
+        uncompleted:
+            - Aliquam erat volutpat.
+            - Duis pellentesque facilisis condimentum.
+            - Maecenas ullamcorper nunc et elit porttitor porta.
+            - Praesent gravida convallis diam ut dapibus.
+    end:
+        title: End
+        text: Nullam erat sapien, varius et mattis faucibus, consectetur faucibus dolor. Cras porttitor orci justo, eu tristique urna fermentum eget. Mauris tincidunt eget leo in facilisis. Donec suscipit sagittis massa sit amet feugiat. Cras nec odio accumsan est consequat consequat vel id tellus. Morbi suscipit lorem ac fringilla posuere. Maecenas sed condimentum odio, laoreet interdum mauris. Fusce felis enim, commodo aliquam mauris quis, commodo tincidunt risus.

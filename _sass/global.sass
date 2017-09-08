@@ -1,0 +1,97 @@
+@media(max-width: 822px)
+    \:root
+        font-size: 12px
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: "Oswald", sans-serif
+
+body, html
+    height: 100%
+
+body
+    overflow-x: hidden
+    padding-top: 63px
+    @media(max-width: 822px)
+        padding-top: 0
+
+strong
+    font-weight: 500
+    font-size: 1.375rem
+
+.container
+    display: flex
+    flex-direction: column
+    width: 87%
+    max-width: 1140px
+    margin: 0 auto
+
+    .row
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+
+        .col
+            width: $col-width
+            max-width: 360px
+            margin: 0 $col-margin
+            @media(max-width: 1024px)
+                width: 50% - ($col-margin * 2)
+                margin-bottom: 30px
+            @media(max-width: 822px)
+                width: 100%
+                margin: 50px 0
+
+        &
+            .col:first-child
+                margin-left: 0
+            .col:last-child
+                margin-right: 0
+
+
+.overlay
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: rgba(0, 0, 0, 0.3)
+
+.title
+    display: block
+    width: 100%
+    margin-bottom: 30px
+    color: $primary-text
+    text-align: center
+    font-weight: 600
+    font-size: 1.75rem
+
+.ingredients
+    font-size: 1.25rem
+
+// .small-title
+//     font-size: 32px
+//     @media(max-width: 1024px)
+//         font-size: 26px
+//     @media (max-width: 768px)
+//         font-size: 20px
+//
+// .cta
+//     margin: 30px auto 0
+//     padding: 10px 50px
+//     background: $accent-color
+//     color: white
+//     text-decoration: none
+//     font-size: 24px
+//     transition: all 0.3s ease-in-out
+//     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4)
+//     &:hover
+//         background: darken($accent-color, 3)
+//         @media(max-width: 768px)
+//             background: $accent-color
+//     @media(max-width: 1024px)
+//         font-size: 20px
+//     @media(max-width: 768px)
+//         font-size: 18px
