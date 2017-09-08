@@ -174,13 +174,13 @@ function initAboutParallax() {
 (function() {
     var pathname = window.location.pathname;
     initOpenMenu();
-    if (pathname == '/menu/') {
+    if (pathname == '/vegania/menu/') {
         initMenuPage();
     }
-    if (pathname == '/' && screen.width > 822) {
+    if (pathname == '/vegania/' && screen.width > 822) {
         initIntroParalax();
     }
-    if (pathname == '/about/' && screen.width > 822) {
+    if (pathname == '/vegania/about/' && screen.width > 822) {
         initAboutParallax();
     }
 }());
